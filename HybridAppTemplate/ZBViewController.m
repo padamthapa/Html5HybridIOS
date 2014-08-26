@@ -43,32 +43,7 @@
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSString *requestURLString = [[request URL] absoluteString];
-    
-    if ([requestURLString hasPrefix:@"js-call:"]) {
-        
-        NSArray *components = [requestURLString componentsSeparatedByString:@":"];
-        
-        NSString *commandName = (NSString*)[components objectAtIndex:1];
-        NSString *argsAsString = [(NSString*)[components objectAtIndex:2]
-                                  stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        
-        NSError *error = nil;
-        NSData *argsData = [argsAsString dataUsingEncoding:NSUTF8StringEncoding];
-        NSDictionary *args = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:argsData options:kNilOptions error:&error];
-        
-        NSLog(@"Command: %@ - %@", commandName, [args description]);
-        
-        if ([commandName isEqualToString:@"updateNames"]) {
-            
-        }
-        
-        return NO;
-        
-    } else {
-        
-        return YES;
-    }
+    return NO;
 }
 
 @end
