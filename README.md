@@ -8,5 +8,5 @@ Simple hybrid Template with html5 on UIWebView and native.
 There is is a simple implementation of UITableView layout in html. There are Few tricks i learned in css and has been implemented:
 * Ellipsis(...) for long texts
 * User Selection disabled on link
-* User Selection action disabled on link
+* User Selection action(actionsheet with copy & save options) disabled on link
 * Gradients
