@@ -11,3 +11,6 @@ This is a simple implementation of UITableView layout in html. There are few tri
 * User Selection disabled on link
 * User Selection action(actionsheet with copy & save options) disabled on link
 * Gradients
+
+Implementaion of communication between javascript and native Objective-c is been done using [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
+*Pushing Native ViewController to Navigation stack from Javascript Call

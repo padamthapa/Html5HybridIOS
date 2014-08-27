@@ -7,8 +7,13 @@
 //
 
 #import "ZBViewController.h"
+#import "ZBDetailViewController.h"
+#import "WebViewJavascriptBridge.h"
 
 @interface ZBViewController ()
+{
+    WebViewJavascriptBridge* bridge;
+}
 
 @property (weak, nonatomic) IBOutlet UIWebView *mWebView;
 
@@ -29,10 +34,19 @@
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"listview" ofType:@"html"];
     
     NSString *htmlContent = [[NSString alloc] initWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:&error];
-    //[self.mWebView setBackgroundColor:[UIColor redColor]];
+
     self.mWebView.scrollView.bounces = NO;
     [self.mWebView loadHTMLString:htmlContent
                          baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+    
+    bridge = [WebViewJavascriptBridge bridgeForWebView:self.mWebView handler:^(id data, WVJBResponseCallback responseCallback) {
+        NSDictionary *responseData = [NSDictionary dictionaryWithDictionary:data];
+        if ([[responseData objectForKey:@"action"] isEqualToString:@"push"]) {
+            [self pushViewControllerFromJSCall];
+        }
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,6 +58,12 @@
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     return NO;
+}
+
+-(void)pushViewControllerFromJSCall
+{
+    ZBDetailViewController *controller = [[ZBDetailViewController alloc] initWithNibName:@"ZBDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

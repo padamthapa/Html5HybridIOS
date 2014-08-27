@@ -23,6 +23,12 @@
 		CE0D3E4919AC951F00D750E9 /* HybridAppTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3E4819AC951F00D750E9 /* HybridAppTemplateTests.m */; };
 		CE0D3E5819AC981300D750E9 /* listview.css in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3E5719AC981300D750E9 /* listview.css */; };
 		CE0D3E5A19AC981D00D750E9 /* listview.html in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3E5919AC981D00D750E9 /* listview.html */; };
+		CE0D3EAE19ADC78200D750E9 /* jquery-1.11.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3EAD19ADC78200D750E9 /* jquery-1.11.1.min.js */; };
+		CE0D3EB019ADCA4800D750E9 /* listview.js in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3EAF19ADCA4800D750E9 /* listview.js */; };
+		CE0D3EB519ADCDFB00D750E9 /* ZBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3EB319ADCDFB00D750E9 /* ZBDetailViewController.m */; };
+		CE0D3EB619ADCDFB00D750E9 /* ZBDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3EB419ADCDFB00D750E9 /* ZBDetailViewController.xib */; };
+		CE0D3EBB19ADD05600D750E9 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE0D3EB919ADD05600D750E9 /* WebViewJavascriptBridge.js.txt */; };
+		CE0D3EBC19ADD05600D750E9 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0D3EBA19ADD05600D750E9 /* WebViewJavascriptBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,14 @@
 		CE0D3E4819AC951F00D750E9 /* HybridAppTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HybridAppTemplateTests.m; sourceTree = "<group>"; };
 		CE0D3E5719AC981300D750E9 /* listview.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = listview.css; sourceTree = "<group>"; };
 		CE0D3E5919AC981D00D750E9 /* listview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = listview.html; sourceTree = "<group>"; };
+		CE0D3EAD19ADC78200D750E9 /* jquery-1.11.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.11.1.min.js"; sourceTree = "<group>"; };
+		CE0D3EAF19ADCA4800D750E9 /* listview.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = listview.js; sourceTree = "<group>"; };
+		CE0D3EB219ADCDFB00D750E9 /* ZBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBDetailViewController.h; sourceTree = "<group>"; };
+		CE0D3EB319ADCDFB00D750E9 /* ZBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBDetailViewController.m; sourceTree = "<group>"; };
+		CE0D3EB419ADCDFB00D750E9 /* ZBDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZBDetailViewController.xib; sourceTree = "<group>"; };
+		CE0D3EB819ADD05600D750E9 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		CE0D3EB919ADD05600D750E9 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		CE0D3EBA19ADD05600D750E9 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 		CE0D3E1119AC951E00D750E9 = {
 			isa = PBXGroup;
 			children = (
+				CE0D3EB719ADD05600D750E9 /* WebViewJavascriptBridge */,
 				CE0D3E2319AC951F00D750E9 /* HybridAppTemplate */,
 				CE0D3E4219AC951F00D750E9 /* HybridAppTemplateTests */,
 				CE0D3E1C19AC951F00D750E9 /* Frameworks */,
@@ -116,6 +131,7 @@
 		CE0D3E2319AC951F00D750E9 /* HybridAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D3EB119ADCDD200D750E9 /* ViewControllers */,
 				CE0D3E5319AC97E500D750E9 /* www */,
 				CE0D3E2C19AC951F00D750E9 /* ZBAppDelegate.h */,
 				CE0D3E2D19AC951F00D750E9 /* ZBAppDelegate.m */,
@@ -186,8 +202,30 @@
 		CE0D3E5619AC97E500D750E9 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D3EAF19ADCA4800D750E9 /* listview.js */,
+				CE0D3EAD19ADC78200D750E9 /* jquery-1.11.1.min.js */,
 			);
 			path = js;
+			sourceTree = "<group>";
+		};
+		CE0D3EB119ADCDD200D750E9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D3EB219ADCDFB00D750E9 /* ZBDetailViewController.h */,
+				CE0D3EB319ADCDFB00D750E9 /* ZBDetailViewController.m */,
+				CE0D3EB419ADCDFB00D750E9 /* ZBDetailViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE0D3EB719ADD05600D750E9 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				CE0D3EB819ADD05600D750E9 /* WebViewJavascriptBridge.h */,
+				CE0D3EB919ADD05600D750E9 /* WebViewJavascriptBridge.js.txt */,
+				CE0D3EBA19ADD05600D750E9 /* WebViewJavascriptBridge.m */,
+			);
+			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D3E3619AC951F00D750E9 /* Images.xcassets in Resources */,
+				CE0D3EB619ADCDFB00D750E9 /* ZBDetailViewController.xib in Resources */,
 				CE0D3E2819AC951F00D750E9 /* InfoPlist.strings in Resources */,
 				CE0D3E5819AC981300D750E9 /* listview.css in Resources */,
+				CE0D3EAE19ADC78200D750E9 /* jquery-1.11.1.min.js in Resources */,
+				CE0D3EBB19ADD05600D750E9 /* WebViewJavascriptBridge.js.txt in Resources */,
+				CE0D3EB019ADCA4800D750E9 /* listview.js in Resources */,
 				CE0D3E5A19AC981D00D750E9 /* listview.html in Resources */,
 				CE0D3E3119AC951F00D750E9 /* Main.storyboard in Resources */,
 			);
@@ -291,8 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D3E3419AC951F00D750E9 /* ZBViewController.m in Sources */,
+				CE0D3EB519ADCDFB00D750E9 /* ZBDetailViewController.m in Sources */,
 				CE0D3E2E19AC951F00D750E9 /* ZBAppDelegate.m in Sources */,
 				CE0D3E2A19AC951F00D750E9 /* main.m in Sources */,
+				CE0D3EBC19ADD05600D750E9 /* WebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +541,7 @@
 				CE0D3E4E19AC951F00D750E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE0D3E4F19AC951F00D750E9 /* Build configuration list for PBXNativeTarget "HybridAppTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +550,7 @@
 				CE0D3E5119AC951F00D750E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

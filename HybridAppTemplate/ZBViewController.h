@@ -10,6 +10,6 @@
 
 @interface ZBViewController : UIViewController<UIWebViewDelegate>
 
-
+- (void)pushViewControllerFromJSCall;
 
 @end

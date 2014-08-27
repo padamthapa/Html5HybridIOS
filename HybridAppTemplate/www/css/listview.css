@@ -64,6 +64,11 @@ nav ul#nlists li
 	background-image:    -moz-linear-gradient(top, #ffffff, #ecf1f5);
 	background-image:      -o-linear-gradient(top, #ffffff, #ecf1f5);
 	background-image:         linear-gradient(top, #ffffff, #ecf1f5);
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+	-webkit-tap-highlight-color: transparent;
 }
 
 nav ul#nlists li.item
@@ -85,10 +90,10 @@ nav ul#nlists li a
 	font-size: 1.4em;
 	color: #787878;
 	font-weight: bold;
-	-webkit-touch-callout: none;
+	/*-webkit-touch-callout: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;*/
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow:ellipsis;	
