@@ -13,4 +13,4 @@ This is a simple implementation of UITableView layout in html. There are few tri
 * Gradients
 
 Implementaion of communication between javascript and native Objective-c is been done using [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
-*Pushing Native ViewController to Navigation stack from Javascript Call
+* Pushing Native ViewController to Navigation stack from Javascript Call
