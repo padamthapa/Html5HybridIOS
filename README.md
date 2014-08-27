@@ -14,3 +14,7 @@ This is a simple implementation of UITableView layout in html. There are few tri
 
 Implementaion of communication between javascript and native Objective-c is been done using [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
 * Pushing Native ViewController to Navigation stack from Javascript Call
+
+**NOTE:**
+Please make sure your all javascript files is moved from "compile sources" to "Copy bundle resources". This is required for your jquery and js files to work on your xocde.
+![Alt text](http://www.padamthapa.com/wp-content/uploads/js-xcode.png "Xcode Javscript settings")
