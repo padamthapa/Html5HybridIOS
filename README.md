@@ -16,5 +16,5 @@ Implementaion of communication between javascript and native Objective-c is been
 * Pushing Native ViewController to Navigation stack from Javascript Call
 
 **NOTE:**
-Please make sure your all javascript files is moved from "compile sources" to "Copy bundle resources". This is required for your jquery and js files to work on your xcode.
+ Please make sure your all javascript files is moved from "compile sources" to "Copy bundle resources". This is required for your jquery and js files to work on your xcode.
 ![Alt text](http://www.padamthapa.com/wp-content/uploads/js-xcode.png "Xcode Javscript settings")
